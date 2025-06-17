@@ -7,7 +7,7 @@ part of 'providers.dart';
 // **************************************************************************
 
 String _$getAllPostsUseCaseHash() =>
-    r'd463c879cf61dbd9982c9ae3a94b69287f6f37e7';
+    r'e968adedb868f1a9dbc2cf9e2e808e34da6fab98';
 
 /// See also [getAllPostsUseCase].
 @ProviderFor(getAllPostsUseCase)
