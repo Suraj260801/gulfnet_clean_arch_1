@@ -24,7 +24,7 @@ final getAllPostsUseCaseProvider = Provider<GetAllPosts>.internal(
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
 typedef GetAllPostsUseCaseRef = ProviderRef<GetAllPosts>;
-String _$addPostUseCaseHash() => r'62bc62b590cd510076e0a60c3b3e9b286665ae6e';
+String _$addPostUseCaseHash() => r'e6177fc348efb07cf575391e904633d99971308b';
 
 /// See also [addPostUseCase].
 @ProviderFor(addPostUseCase)
@@ -42,7 +42,7 @@ final addPostUseCaseProvider = Provider<AddPost>.internal(
 // ignore: unused_element
 typedef AddPostUseCaseRef = ProviderRef<AddPost>;
 String _$updatePostTitleUseCaseHash() =>
-    r'62403a099281276d610ff6a2e2eee0580e6cc87b';
+    r'28a2bdde34a240327f7754c3a9988bf664e516c5';
 
 /// See also [updatePostTitleUseCase].
 @ProviderFor(updatePostTitleUseCase)

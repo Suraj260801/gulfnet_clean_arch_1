@@ -6,7 +6,7 @@ part of 'providers.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$networkInfoHash() => r'9c50417a3f1db9756740f6da51ca6f7729150ee1';
+String _$networkInfoHash() => r'db8fc6bdbc572324c2188d1a6ad076831ac36996';
 
 /// See also [networkInfo].
 @ProviderFor(networkInfo)
@@ -22,7 +22,7 @@ final networkInfoProvider = Provider<NetworkInfo>.internal(
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
 typedef NetworkInfoRef = ProviderRef<NetworkInfo>;
-String _$postRepositoryHash() => r'9aa8904b5e64db2dace912a8a95af1dace68e76a';
+String _$postRepositoryHash() => r'2de9c4b3e2b8be5cf037b6c6467b46dd4beed37d';
 
 /// See also [postRepository].
 @ProviderFor(postRepository)

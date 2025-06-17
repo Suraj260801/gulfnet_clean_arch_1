@@ -6,8 +6,24 @@ part of 'providers.dart';
 // RiverpodGenerator
 // **************************************************************************
 
+String _$dioClientHash() => r'895f0dc2f8d5eab562ad65390e5c6d4a1f722b0d';
+
+/// See also [dioClient].
+@ProviderFor(dioClient)
+final dioClientProvider = Provider<DioClient>.internal(
+  dioClient,
+  name: r'dioClientProvider',
+  debugGetCreateSourceHash:
+      const bool.fromEnvironment('dart.vm.product') ? null : _$dioClientHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+@Deprecated('Will be removed in 3.0. Use Ref instead')
+// ignore: unused_element
+typedef DioClientRef = ProviderRef<DioClient>;
 String _$postRemoteDatasourceHash() =>
-    r'1230bdb4e7d90525c885870a9b59f7f45a289af5';
+    r'56f04bff976fa1e1671bbd49d4bebe88960d40a5';
 
 /// See also [postRemoteDatasource].
 @ProviderFor(postRemoteDatasource)
@@ -25,7 +41,7 @@ final postRemoteDatasourceProvider = Provider<PostRemoteDatasource>.internal(
 // ignore: unused_element
 typedef PostRemoteDatasourceRef = ProviderRef<PostRemoteDatasource>;
 String _$postLocalDatasourceHash() =>
-    r'2ebead08b5381e12be86f20e39cfe1dd6727e32d';
+    r'c730d0841c93ef5b759265c492c1582584a7621a';
 
 /// See also [postLocalDatasource].
 @ProviderFor(postLocalDatasource)

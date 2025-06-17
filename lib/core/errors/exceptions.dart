@@ -35,3 +35,12 @@ class NetworkException extends AppExceptions {
 class ClientException extends AppExceptions {
   ClientException(String message, {int? statusCode}) : super(message, statusCode: statusCode);
 }
+
+class DataParsingException extends AppExceptions{
+  DataParsingException(String message,{int? statusCode}): super(message,statusCode: statusCode);
+}
+
+class UnknownException extends AppExceptions{
+  UnknownException(String message,{int? statusCode}): super(message,statusCode: statusCode);
+
+}

@@ -17,20 +17,33 @@ class PostListPage extends ConsumerWidget {
       body: postListAsyncValue.when(
           data: (posts){
             if(posts.isEmpty) return const Center(child: Text("No Posts Yet! Add One Below"));
-            return ListView.builder(
+            return ListView.separated(
+
                 padding: const EdgeInsets.all(8.0),
                 itemCount: posts.length,
+                separatorBuilder: (context,index)=>Divider(),
                 itemBuilder: (context,index){
-                    return ListTile(
-                      leading: Text(posts[index].id.toString()),
-                      title: Text(posts[index].title),
-                      trailing: Text(posts[index].body),
+                    return Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            Expanded(
+                              flex: 1,
+                                child: Text(posts[index].id.toString())),
+                            Expanded(
+                              flex: 9,
+                                child: Text(posts[index].title,maxLines: 1,))
+                          ],
+                        ),
+                        Text(posts[index].body)
+                      ],
                     );
                 });
 
           },
           error: (error, stack)=> Center(child: Text(error.toString()),),
-          loading: ()=>CircularProgressIndicator()),
+          loading: ()=>Center(child: CircularProgressIndicator())),
     );
   }
 }
