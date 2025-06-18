@@ -12,29 +12,29 @@ abstract class Failure extends Equatable{
 
 /// Represents a failure originating from the server.
 class ServerFailure extends Failure {
-  const ServerFailure(String message) : super(message);
+  const ServerFailure(super.message);
 }
 
 
 /// Represents a failure originating from local data operations.
 class CacheFailure extends Failure {
-  const CacheFailure(String message) : super(message);
+  const CacheFailure(super.message);
 }
 
 
 /// Represents a failure due to network connectivity issues.
 class NetworkFailure extends Failure {
-  const NetworkFailure(String message) : super(message);
+  const NetworkFailure(super.message);
 }
 
 
 /// Represents a general client-side failure (e.g., invalid input).
 class ClientFailure extends Failure {
-  const ClientFailure(String message) : super(message);
+  const ClientFailure(super.message);
 }
 
 
 /// Represents an unexpected or unknown failure.
 class UnexpectedFailure extends Failure {
-  const UnexpectedFailure(String message) : super(message);
+  const UnexpectedFailure(super.message);
 }

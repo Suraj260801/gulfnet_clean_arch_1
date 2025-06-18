@@ -15,32 +15,32 @@ abstract class AppExceptions implements Exception {
 
 /// Exception thrown when a server error occurs (e.g., 500, 404).
 class ServerException extends AppExceptions {
-  ServerException(String message, {int? statusCode}) : super(message, statusCode: statusCode);
+  ServerException(super.message, {super.statusCode});
 }
 
 
 /// Exception thrown when there's an issue with local data storage.
 class CacheException extends AppExceptions {
-  CacheException(String message) : super(message);
+  CacheException(super.message, {super.statusCode});
 }
 
 
 /// Exception thrown when there's no internet connection.
 class NetworkException extends AppExceptions {
-  NetworkException(String message) : super(message);
+  NetworkException(super.message, {super.statusCode});
 }
 
 
 /// Exception thrown for general client-side errors (e.g., bad request 400).
 class ClientException extends AppExceptions {
-  ClientException(String message, {int? statusCode}) : super(message, statusCode: statusCode);
+  ClientException(super.message, {super.statusCode});
 }
 
 class DataParsingException extends AppExceptions{
-  DataParsingException(String message,{int? statusCode}): super(message,statusCode: statusCode);
+  DataParsingException(super.message,{super.statusCode});
 }
 
 class UnknownException extends AppExceptions{
-  UnknownException(String message,{int? statusCode}): super(message,statusCode: statusCode);
+  UnknownException(super.message,{super.statusCode});
 
 }
